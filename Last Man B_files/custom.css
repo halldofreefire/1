@@ -66,9 +66,8 @@ header {
     text-shadow: -0.12em 0.05em black;
     color: white;
     position: relative;
-    background-color: black;
-    height: 47vh;
-    min-height: 15rem;
+    /* background-color: black; */
+    height: 92px;
     width: 100%;
     overflow: hidden;
 }
