@@ -1,11 +1,13 @@
-<html class="fa-events-icons-ready"><head>
+<html class="fa-events-icons-ready">
+
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate, Post-Check=0, Pre-Check=0">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="-1">
-   <script>
-        function copiarTexto(elemento) {
+    <script>
+        function copiarTexto(elemento, obj) {
 
             var x = document.createElement("INPUT");
             x.value = elemento;
@@ -17,8 +19,7 @@
 
             document.execCommand("Copy");
             document.body.removeChild(x);
-            
-            
+
             for (var i = 0; i < document.getElementsByTagName('span').length; i++)
                 document.getElementsByTagName('span')[i].style.display = "none"
 
@@ -27,7 +28,6 @@
 
 
             obj.parentNode.getElementsByTagName('span')[0].style.display = "block"
-        }
         }
     </script>
 
@@ -63,13 +63,23 @@
 
 
 
-<link href="https://use.fontawesome.com/3dc293dff2.css" media="all" rel="stylesheet"><link href="https://use.fontawesome.com/3dc293dff2.css" media="all" rel="stylesheet"><link href="https://use.fontawesome.com/3dc293dff2.css" media="all" rel="stylesheet"><link href="https://use.fontawesome.com/3dc293dff2.css" media="all" rel="stylesheet"><link href="https://use.fontawesome.com/3dc293dff2.css" media="all" rel="stylesheet"><link href="https://use.fontawesome.com/3dc293dff2.css" media="all" rel="stylesheet"><link href="https://use.fontawesome.com/3dc293dff2.css" media="all" rel="stylesheet"><link href="https://use.fontawesome.com/3dc293dff2.css" media="all" rel="stylesheet"><link href="https://use.fontawesome.com/3dc293dff2.css" media="all" rel="stylesheet"></head>
+    <link href="https://use.fontawesome.com/3dc293dff2.css" media="all" rel="stylesheet">
+    <link href="https://use.fontawesome.com/3dc293dff2.css" media="all" rel="stylesheet">
+    <link href="https://use.fontawesome.com/3dc293dff2.css" media="all" rel="stylesheet">
+    <link href="https://use.fontawesome.com/3dc293dff2.css" media="all" rel="stylesheet">
+    <link href="https://use.fontawesome.com/3dc293dff2.css" media="all" rel="stylesheet">
+    <link href="https://use.fontawesome.com/3dc293dff2.css" media="all" rel="stylesheet">
+    <link href="https://use.fontawesome.com/3dc293dff2.css" media="all" rel="stylesheet">
+    <link href="https://use.fontawesome.com/3dc293dff2.css" media="all" rel="stylesheet">
+    <link href="https://use.fontawesome.com/3dc293dff2.css" media="all" rel="stylesheet">
+    <link href="https://use.fontawesome.com/3dc293dff2.css" media="all" rel="stylesheet">
+</head>
 
 <body data-spy="scrool" data-target="navbarResp">
     <!--Navbar e seus elementos-->
 
     <!--header e consequentemente o home da página-->
-   <header>
+    <header>
         <nav class="navbar navbar-expand-sm navbar-dark sticky-top" style="
     /* margin-bottom: -53px; */
 ">
@@ -79,8 +89,8 @@
 ">
             </a>
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#itensNavbar" aria-controls="itensNavbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="navbar-collapse collapse" id="itensNavbar" style="">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -88,7 +98,7 @@
     margin-left: 0px;
 ">Início</a>
                     </li>
-<li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link" href="#contato" style="
     margin-left: 20px;
 ">Campeonatos</a>
@@ -103,7 +113,7 @@
     margin-left: 20px;
 ">Novidades</a>
                     </li>
-                    
+
                 </ul>
             </div>
         </nav>
@@ -123,8 +133,8 @@
 
 
 
-                
-<h2 class="subtitulo">PERFIL DO JOGADOR</h2>
+
+                <h2 class="subtitulo">PERFIL DO JOGADOR</h2>
                 <div class="sublinha"></div><img src="./video/perfil.jpg" style="
     width: 100%;
     margin-bottom: 10px; 
@@ -133,17 +143,17 @@
                 <div class="sublinha"></div>
                 <p class="lead text-justify">Segue o perfil do jogador<strong> THIAGO rj</strong>, aqui voce pode avaliar o potencial do jogador baseado no seu desempenho de de Kills e Vitorias.
                 </p>
-    
-               <div class="CopiaTexto">
+
+                <div class="CopiaTexto">
                     <input readonly="" class="bntCopiar" value="ID : 675145658" type="text" name="link">
-                    <button class="bntCopiar" onclick="copiarTexto('675145658')" value="67" style=" width: 35px; background-color: #DDDDDD;">
+                    <button class="bntCopiar" onclick="copiarTexto('675145658',this)" value="67" style=" width: 35px; background-color: #DDDDDD;">
                         <img width="100%" src="./video/copiar.png" style="
     border-radius: 0;
     box-shadow: none;
 ">
                     </button>
-    
-    <span style="
+
+                    <span style="
     font-size: 10px;display:none
 ">Copiado !</span>
                 </div>
@@ -151,7 +161,7 @@
             </div>
         </div>
     </section>
-<br>
+    <br>
     <!--projeto-->
     <section id="projeto" class="offset">
         <div>
@@ -166,44 +176,38 @@
 
 
                     <strong>- Patente Diamente 1 em diante.<br>
-      - Level acima do 40.</strong>
+                        - Level acima do 40.</strong>
 
 
-<br>
+                    <br>
 
 
 
                 </p>
-    
-    <div class="CopiaTexto" style="
+
+                <div class="CopiaTexto" style="
 ">
                     <input readonly="" class="bntCopiar" value="ID GUILDA : 65027857" type="text" name="link">
-                    <button class="bntCopiar" onclick="copiarTexto('65027857')" value="67" style=" width: 35px; background-color: #DDDDDD;">
+                    <button class="bntCopiar" onclick="copiarTexto('65027857',this)" value="67" style=" width: 35px; background-color: #DDDDDD;">
                         <img width="100%" src="./video/copiar.png" style="
     border-radius: 0;
     box-shadow: none;
 ">
                     </button>
-        <span style="
-    font-size: 10px;display:none
-">Copiado !</span>
+                    <span style=" font-size: 10px;display:none ">Copiado !</span>
+
                 </div>
 
- <div class="CopiaTexto" style="">
-                    <input readonly="" class="bntCopiar" value="WHATSAPP : 21981572546" type="text" "="" name="link" style="
-    background-color: #6c757d;
-">
-                    <button class="bntCopiar" onclick="copiarTexto('21981572546')" value="67" style=" width: 35px; background-color: #DDDDDD;">
-                        <img width="100%" src="./video/copiar.png" style="
-    border-radius: 0;
-    box-shadow: none;
-">
+                <div class="CopiaTexto" style="">
+                    <input readonly="" class="bntCopiar" value="WHATSAPP : 21981572546" type="text" "=" " name=" link " style=" background-color: #6c757d; ">
+                    <button class=" bntCopiar " onclick=" copiarTexto( '21981572546' ,this) " value=" 67 " style=" width: 35px; background-color: #DDDDDD; ">
+                        <img width=" 100% " src=" ./video/copiar.png " style=" border-radius: 0; box-shadow: none; ">
                     </button>
-  <span style="
-    font-size: 10px;display:none
-">Copiado !</span>
-                </div>
 
+ <span style=" font-size: 10px;display:none ">Copiado !</span>
+                    
+                </div>
+                          <span style=" font-size: 10px;display:none ">Copiado !</span>
 
 
     
@@ -217,56 +221,51 @@
         </div>
     </section>
     <!--notas-->
-    <br><section id="notas" class="offset">
-        <div class="row caixa col-12 text-center">
-            <div class="col-12 text-center">
-                <h2 class="subtitulo">Clipadas do jogador</h2>
-                <div class="sublinha"></div>
+    <br><section id=" notas " class=" offset ">
+        <div class=" row caixa col-12 text-center ">
+            <div class=" col-12 text-center ">
+                <h2 class=" subtitulo ">Clipadas do jogador</h2>
+                <div class=" sublinha "></div>
 
 
 
-                <div class="embed-container">
-<iframe src="https://www.youtube.com/embed/_o1gRAjFod8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                <div class=" embed-container ">
+<iframe src=" https://www.youtube.com/embed/_o1gRAjFod8 " frameborder=" 0 " allow=" accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture " allowfullscreen=" "></iframe>
            
                 </div>
 
 
 
-                <!--<img src="./video/placar.jpg" style="
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
-    margin-bottom: 4px;
-    width:100%;
-    margin-top: 10px;
-">-->
-                <p class="lead text-justify"><strong>Videos do jogador amassando.</strong></p>
+                <!--<img src=" ./video/placar.jpg " style=" box-shadow: 5px 5px 5px rgba(0,0,0,0.5); margin-bottom: 4px; width:100%; margin-top: 10px; ">-->
+                <p class=" lead text-justify "><strong>Videos do jogador amassando.</strong></p>
             </div>
-            <!-- <div class="col-12 text-center">
-                <a href="https://pastebin.com/9GFE6HGj" target="_blank"><i class="fa fa-file-pdf-o fa-4x" aria-hidden="true"></i></a>
+            <!-- <div class=" col-12 text-center ">
+                <a href=" https://pastebin.com/9GFE6HGj " target=" _blank "><i class=" fa fa-file-pdf-o fa-4x " aria-hidden=" true "></i></a>
             </div> -->
         </div>
     </section>
     <!--contato-->
-    <section id="contato" class="offset">
+    <section id=" contato " class=" offset ">
         <footer>
-            <div class="row justify-content-center">
-                <div class="col-md-12 text-center">
-                    <img src="./Last Man B_files/logob.png" width="120" height="70" style="box-shadow:none">
+            <div class=" row justify-content-center ">
+                <div class=" col-md-12 text-center ">
+                    <img src=" ./Last Man B_files/logob.png " width=" 120 " height=" 70 " style=" box-shadow:none ">
                 </div>
-                <!-- <div class="col-md-12 text-center">
+                <!-- <div class=" col-md-12 text-center ">
                     <strong>Você pode entrar em contato por email.</strong>
                     <p>lastmanb@outlook.com</p>
                 </div> -->
             </div>
-            <hr class="socket">
-            <!-- <p class="copy">© Todos os direitos reservados aos seus criadores. Lastman foi concebido por Bastien Vivès, Yves "Balak" Bigerel e Michaël Sanlaville. Animação dirigida por Jérémi Périn, produzida por Everybody on the Deck e Je Suis Bien Content. Distribuída
+            <hr class=" socket ">
+            <!-- <p class=" copy ">© Todos os direitos reservados aos seus criadores. Lastman foi concebido por Bastien Vivès, Yves " Balak " Bigerel e Michaël Sanlaville. Animação dirigida por Jérémi Périn, produzida por Everybody on the Deck e Je Suis Bien Content. Distribuída
                 originalmente pelo canal France 4. Este site não tem fins lucrativos e apenas divulga a animação com legendas em português.</p> -->
         </footer>
     </section>
     <!-- Optional JavaScript -->
-    <script src="./Last Man B_files/3dc293dff2.js.download"></script> 
+    <script src=" ./Last Man B_files/3dc293dff2.js.download "></script> 
     <!-- jQuery primeiro e em seguida bundle com popper.js e javascript -->
-   <script src="./Last Man B_files/jquery.min.js.download"></script> 
- <script src="./Last Man B_files/bootstrap.bundle.js.download"></script> 
+   <script src=" ./Last Man B_files/jquery.min.js.download "></script> 
+ <script src=" ./Last Man B_files/bootstrap.bundle.js.download "></script> 
 
 
 
@@ -291,8 +290,8 @@
     <style>
     
     .bntCopiar {
-    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, " Segoe UI ", Roboto, " Helvetica Neue ", Arial, " Noto Sans ", sans-serif, " Apple Color Emoji ", " Segoe UI Emoji ", " Segoe UI Symbol ", " Noto Color Emoji ";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, " Liberation Mono ", " Courier New ", monospace;
     border: 1px solid transparent;
     font-size: 1rem;
     line-height: 1.5;
@@ -369,6 +368,7 @@
             height: 100%;
         }
     </style>
+
 
 
 
