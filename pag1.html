@@ -17,6 +17,17 @@
 
             document.execCommand("Copy");
             document.body.removeChild(x);
+            
+            
+            for (var i = 0; i < document.getElementsByTagName('span').length; i++)
+                document.getElementsByTagName('span')[i].style.display = "none"
+
+
+
+
+
+            obj.parentNode.getElementsByTagName('span')[0].style.display = "block"
+        }
         }
     </script>
 
@@ -173,6 +184,9 @@
     box-shadow: none;
 ">
                     </button>
+        <span style="
+    font-size: 10px;display:none
+">Copiado !</span>
                 </div>
 
  <div class="CopiaTexto" style="">
@@ -185,10 +199,11 @@
     box-shadow: none;
 ">
                     </button>
-                </div>
- <span style="
+  <span style="
     font-size: 10px;display:none
 ">Copiado !</span>
+                </div>
+
 
 
     
