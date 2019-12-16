@@ -4,16 +4,23 @@
     <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate, Post-Check=0, Pre-Check=0">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="-1">
-
-<script>
+   <script>
         function copiarTexto(elemento) {
 
-            var textoCopiado = elemento;
-            textoCopiado.select();
-            document.execCommand("Copy");
+            var x = document.createElement("INPUT");
+            x.value = elemento;
 
+            document.body.appendChild(x);
+
+
+            x.select();
+
+            document.execCommand("Copy");
+            document.body.removeChild(x);
         }
     </script>
+
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!-- <script type="text/javascript" async="" src="./Last Man B_files/analytics.js.download"></script> -->
     <script async="" src="./Last Man B_files/js"></script>
@@ -45,7 +52,7 @@
 
 
 
-<link href="https://use.fontawesome.com/3dc293dff2.css" media="all" rel="stylesheet"><link href="https://use.fontawesome.com/3dc293dff2.css" media="all" rel="stylesheet"></head>
+<link href="https://use.fontawesome.com/3dc293dff2.css" media="all" rel="stylesheet"><link href="https://use.fontawesome.com/3dc293dff2.css" media="all" rel="stylesheet"><link href="https://use.fontawesome.com/3dc293dff2.css" media="all" rel="stylesheet"></head>
 
 <body data-spy="scrool" data-target="navbarResp">
     <!--Navbar e seus elementos-->
@@ -115,9 +122,13 @@
                 <div class="sublinha"></div>
                 <p class="lead text-justify">Segue o perfil do jogador<strong> THIAGO rj</strong>, aqui voce pode avaliar o potencial do jogador baseado no seu desempenho de de Kills e Vitorias.
                 </p>
-                <input readonly class="bntCopiar" value="ID : 675145658" type="text"  name="link">
-                <button class="bntCopiar" onclick="copiarTexto(this)" value="675145658" style=" width: 35px; background-color: #DDDDDD;">
-                    <img width="100%" src="./video/copiar.png"></button>
+    
+               <div class="CopiaTexto">
+                    <input readonly="" class="bntCopiar" value="ID : 675145658" type="text" name="link">
+                    <button class="bntCopiar" onclick="copiarTexto('675145658')" value="67" style=" width: 35px; background-color: #DDDDDD;">
+                        <img width="100%" src="./video/copiar.png">
+                    </button>
+                </div>
 
             </div>
         </div>
@@ -144,11 +155,28 @@
 
 
 
-                </p><a class="btn btn-secondary btn-md" href="#" target="_blank">ID DA GUILDA : 65027857</a>
-                <a class="btn btn-secondary btn-md" href="#" target="_blank" style="
-    background-color: cadetblue;
-">WHATSAPP: 21981572546</a>
+                </p>
+    
+    <div class="CopiaTexto">
+                    <input readonly="" class="bntCopiar" value="ID GUILDA : 65027857" type="text" name="link">
+                    <button class="bntCopiar" onclick="copiarTexto('65027857')" value="67" style=" width: 35px; background-color: #DDDDDD;">
+                        <img width="100%" src="./video/copiar.png">
+                    </button>
+                </div>
 
+ <div class="CopiaTexto">
+                    <input readonly="" class="bntCopiar" value="WHATSAPP : 21981572546" type="text" "="" name="link">
+                    <button class="bntCopiar" onclick="copiarTexto('21981572546')" value="67" style=" width: 35px; background-color: #DDDDDD;">
+                        <img width="100%" src="./video/copiar.png">
+                    </button>
+                </div>
+
+
+    
+    
+    
+    
+ 
 
 
             </div>
@@ -268,7 +296,7 @@
         }
         
         @media only screen and (max-width: 880px) {
-            #projeto > div > div > a:nth-child(5){
+            .CopiaTexto{
                  margin-bottom: 6px;
             
             }
@@ -305,6 +333,7 @@
             height: 100%;
         }
     </style>
+
 
 
 
