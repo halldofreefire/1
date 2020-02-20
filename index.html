@@ -34,7 +34,30 @@
     
     
     
-    
+    <script>
+        function copiarTexto(elemento, obj) {
+
+            var x = document.createElement("INPUT");
+            x.value = elemento;
+
+            document.body.appendChild(x);
+
+
+            x.select();
+
+            document.execCommand("Copy");
+            document.body.removeChild(x);
+
+            for (var i = 0; i < document.getElementsByTagName('span').length; i++)
+                document.getElementsByTagName('span')[i].style.display = "none"
+
+
+
+
+
+            obj.parentNode.getElementsByTagName('span')[0].style.display = "table"
+        }
+    </script>
   
 
 </head><body data-spy="scrool" data-target="navbarResp">
@@ -122,7 +145,18 @@
                  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
     margin-bottom: 46px;width:100%
 ">
-                <p class="lead text-justify">Toda <strong>SÁBADO</strong> acontece o <strong>X1 DOS CRIAS</strong> e <strong>XSQUAD</strong>  da Guilda <strong>ELITE PRO</strong>, entre com sua Guilda partipar também, marque sua guilda no contato abaixo e só BORAAAA!!</p>
+                <p class="lead text-justify">Toda <strong>SÁBADO</strong> acontece o <strong>X1 DOS CRIAS</strong> e <strong>XSQUAD</strong>  da Guilda <strong>ELITE PRO</strong>, entre com sua Guilda partipar também, marque sua guilda no contato abaixo e só BORAAAA!!</p><div class="CopiaTexto" style="
+">
+                    <input readonly="" class="bntCopiar" value="ID GUILDA : 65027857" type="text" name="link">
+                    <button class="bntCopiar" onclick="copiarTexto('65027857',this)" value="67" style=" width: 35px; background-color: #DDDDDD;">
+                        <img width="100%" src="./video/copiar.png" style="
+    border-radius: 0;
+    box-shadow: none;
+">
+                    </button>
+                    <span style="font-size: 10px; display: none; margin-left: 94px;">Copiado !</span>
+
+                </div>
 
             </div>
             <!-- <div class="col-12 text-center">
@@ -362,6 +396,7 @@ width: 100%;
 
 
     
+
 
 
 
