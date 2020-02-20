@@ -48,7 +48,7 @@
             document.execCommand("Copy");
             document.body.removeChild(x);
 
-            for (var i = 0; i < document.getElementsByTagName('span').length; i++)
+            for (var i = 1; i < document.getElementsByTagName('span').length; i++)
                 document.getElementsByTagName('span')[i].style.display = "none"
 
 
@@ -72,7 +72,7 @@
                 <img src="./Last Man B_files/logob.png" width="75" height="35" class="d-inline-block align-top" alt="">
             </a>
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#itensNavbar" aria-controls="itensNavbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon" style="display: none;"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
             <div class="navbar-collapse collapse" id="itensNavbar" style="">
                 <ul class="navbar-nav ml-auto">
@@ -355,6 +355,7 @@ width: 100%;
 
 
     
+
 
 
 
